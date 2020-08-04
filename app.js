@@ -29,7 +29,7 @@ app.get("/restart", function(request, response){
 
 app.get("/stop", function(request, response){ 
     if (request.query['key'] === key) {
-		exec("pkill -e " + process_name, (error, stdout, stderr) => { 
+		exec("pkill -f " + process_name, (error, stdout, stderr) => { 
 			console.log(error)
 		})
 		response.send("done");
