@@ -5,7 +5,7 @@ var exec = require("child_process").exec;
 
 var process_name = "FXServer";
 var server_dir = "/home/Gabi/FXServer/server-data"
-var start_script = "bash /home/Gabi/FXServer/server/run.sh +exec server.cfg"
+var start_script = "bash /home/Gabi/FXServer/server/run.sh +exec /home/Gabi/FXServer/server-data/server.cfg"
 var key = "SiliconRP_"
 var port = 80
 
