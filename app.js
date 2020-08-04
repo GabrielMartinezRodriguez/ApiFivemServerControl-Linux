@@ -1,7 +1,7 @@
 var express = require('express')
 var app = express()
 
-var express = require("child_process").exec;
+var exec = require("child_process").exec;
 
 var process_name = "FXServer";
 var server_dir = "/home/Gabi/FXServer/server-data"
@@ -10,7 +10,7 @@ var key = "SiliconRP_"
 var port = 80
 
 app.get("/", function(request, response){ 
-    response.send("FiveM Linux Control API - <a href='https://github.com/GabrielMartinezRodriguez/ApiFivemServerControl-Linux.git' GIT REPOSITORY> <hr><a href='/restart'>Restart</a><br><a href='/stop'>Stop</a><br><a href='/start'>Start</a>");
+    response.send("FiveM Linux Control API - <a href='https://github.com/GabrielMartinezRodriguez/ApiFivemServerControl-Linux.git'> GIT REPOSITORY</a> <hr><a href='/restart'>Restart</a><br><a href='/stop'>Stop</a><br><a href='/start'>Start</a>");
 });
 
 app.get("/restart", function(request, response){ 
